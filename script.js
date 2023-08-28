@@ -73,9 +73,10 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function createNewUniqueLink() {
-        currentToken = Math.random().toString(36).substr(2, 10);
-        const uniqueURL = window.location.origin + `/mobile.html?token=${currentToken}`;
-        const expirationTime = Date.now() + 120000;
+    currentToken = Math.random().toString(36).substr(2, 10);
+    const baseURL = 'https://adibkn1.github.io/activation/';  // Define the base URL as a string
+    const uniqueURL = baseURL + 'mobile.html?token=' + currentToken;  // Concatenate the parts
+    const expirationTime = Date.now() + 120000;
 
         firebase.database().ref('tokens/' + currentToken).set(expirationTime);
         qrCodeElement.innerHTML = '';
