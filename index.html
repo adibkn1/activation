@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Switcher</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-database.js"></script>
+    <script src="firebase-config.js"></script>
+    <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js" defer></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="main-container">
+        <div class="product-wrapper">
+            <div class="qr-code-container">
+                <div id="qrCode"></div>
+            </div>
+            <div class="product-transition-wrapper">
+                <div class="product-container" id="productContainer1">
+                    <img id="image1" src="https://static.wixstatic.com/media/198499_debf9a11940f4723b246e9fe5b396ee6~mv2.jpg" alt="Image 1">
+                </div>
+                <div class="product-container hidden" id="productContainer2">
+                    <img id="image2" src="https://static.wixstatic.com/media/198499_a91705bc5e3647d5b8bedc7cb69571ec~mv2.jpg" alt="Image 2">
+                </div>
+                <div class="product-container hidden" id="productContainer3">
+                    <img id="image3" src="https://static.wixstatic.com/media/198499_079ad2f7c6b0452e99cab3912efa4526~mv2.jpg" alt="Image 3">
+                </div>
+                <div class="product-container hidden" id="productContainer4">
+                    <img id="image4" src="https://static.wixstatic.com/media/198499_743deb055a2a4930a15ea067cf64e106~mv2.jpg" alt="Image 4">
+                </div>
+                <div class="product-container hidden" id="productContainer5">
+                    <img id="image5" src="https://static.wixstatic.com/media/198499_a2f2eb45678d422188c8519ac74ce96c~mv2.jpg" alt="Image 5">
+                </div>
+                <div class="product-container hidden" id="productContainer6">
+                    <img id="image6" src="https://static.wixstatic.com/media/198499_8e8957e179144952b96f62c49a42a276~mv2.jpg" alt="Image 6">
+                    <div class="pattern-overlay"></div>
+                </div>
+                <div class="product-container hidden" id="productContainer7">
+                    <img id="image7" src="https://static.wixstatic.com/media/198499_b7c535a5a610488185c60fcff9dc43ee~mv2.jpg" alt="Image 7">
+                </div>
+            </div>
+        </div>
+    </div>
+      <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Product</title>
+    <link rel="stylesheet" href="mobile-styles.css">
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-database.js"></script>
+    <script src="firebase-config.js"></script>
+</head>
+<body>
+    <div id="loadingLine" class="loading-line"></div>
+    <div class="header">
+        <img src="https://logos-world.net/wp-content/uploads/2020/05/Zara-Logo.png" alt="Logo" />
+    </div>
+    <div class="product-grid">
+        <div class="product-cell" onclick="selectProduct(0)">
+            <img src="https://static.wixstatic.com/media/198499_a91705bc5e3647d5b8bedc7cb69571ec~mv2.jpg" alt="Product 2">
+            <p class="product-title">KNIT COTTON POLO SHIRT</p>
+            <p class="product-price">₹ 3,290.00</p>
+        </div>
+        <div class="product-cell" onclick="selectProduct(1)">
+            <img src="https://static.wixstatic.com/media/198499_079ad2f7c6b0452e99cab3912efa4526~mv2.jpg" alt="Product 3">
+            <p class="product-title">KNIT COTTON POLO SHIRT</p>
+            <p class="product-price">₹ 3,290.00</p>
+        </div>
+        <div class="product-cell" onclick="selectProduct(2)">
+            <img src="https://static.wixstatic.com/media/198499_743deb055a2a4930a15ea067cf64e106~mv2.jpg" alt="Product 4">
+            <p class="product-title">KNIT COTTON POLO SHIRT</p>
+            <p class="product-price">₹ 3,290.00</p>
+        </div>
+        <div class="product-cell" onclick="selectProduct(3)">
+            <img src="https://static.wixstatic.com/media/198499_a2f2eb45678d422188c8519ac74ce96c~mv2.jpg" alt="Product 5">
+            <p class="product-title">KNIT COTTON POLO SHIRT</p>
+            <p class="product-price">₹ 3,290.00</p>
+        </div>
+        <div class="product-cell" onclick="selectProduct(4)">
+            <img src="https://static.wixstatic.com/media/198499_8e8957e179144952b96f62c49a42a276~mv2.jpg" alt="Product 6">
+            <p class="product-title">KNIT COTTON POLO SHIRT</p>
+            <p class="product-price">₹ 3,290.00</p>
+        </div>
+        <div class="product-cell" onclick="selectProduct(5)">
+            <img src="https://static.wixstatic.com/media/198499_b7c535a5a610488185c60fcff9dc43ee~mv2.jpg" alt="Product 7">
+            <p class="product-title">KNIT COTTON POLO SHIRT</p>
+            <p class="product-price">₹ 3,290.00</p>
+        </div>
+        <footer>2023 Effectization Studio</footer>
+        <script src="mobile-script.js"></script>
+    </body>
+    </html>

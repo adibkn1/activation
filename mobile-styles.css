@@ -1,0 +1,82 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #000000;
+    font-family: 'Arial', sans-serif;
+}
+
+.header {
+    text-align: center;
+    padding: 15px;
+    background-color: #ffffff;
+}
+
+.header img {
+    width: 80px;
+}
+
+.loading-line {
+    height: 2px;
+    background-color: #ffffff; /* White background */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0; /* Start with zero width */
+}
+
+.loading-line.start {
+    background-color: #000000; /* Black color for the loading bar */
+    animation: loading 120s ease-in-out forwards; /* Reduced duration and added ease-in-out */
+}
+
+@keyframes loading {
+    to {
+        width: 100%; /* Increase the width to 100% */
+    }
+}
+
+/* Rest of the CSS as before */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 47.5%);
+    grid-gap: 5%; /* Adjust the space between product cells */
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+    margin: auto;
+    width: 90%;
+}
+
+.product-cell img {
+    width: 100%;
+    cursor: pointer;
+    border-radius: 0%;
+    border: 2px solid transparent; /* Transparent border */
+}
+
+.product-cell.selected img {
+    border: 2px solid #000000; /* Black border when selected */
+}
+
+.product-title {
+    text-align: left;
+    font-size: 10px;
+    font-family: 'Helvetica', sans-serif; /* Thin font */
+    margin-bottom: 2px; /* Reduce space between title and price */
+}
+
+.product-price {
+    text-align: left;
+    font-size: 10px;
+    color: #000000;
+    margin-top: 2px; /* Reduce space between title and price */
+}
+
+footer {
+    text-align: right;
+    padding: 10px;
+    font-size: 20px;
+    background-color: #ffffff;
+    color: #000000;
+}
